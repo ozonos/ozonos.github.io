@@ -1,4 +1,4 @@
-ozonos.github.io
+[ozonos.github.io](http://ozonos.github.io)
 ================
 
-Website for Ozon OS
+The website for Ozon OS
