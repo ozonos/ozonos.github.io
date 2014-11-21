@@ -19,3 +19,14 @@ h2 {
     font-weight: bold;
     text-align: center;
 }
+
+h3 {
+    color: #f9f9f9;
+    font-variant: normal;
+    font-weight: bold;
+    text-align: center;
+}
+
+a:hover {
+    color: #FF0066;
+}
