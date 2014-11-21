@@ -19,3 +19,7 @@ h2 {
     font-weight: bold;
     text-align: center;
 }
+
+a:hover {
+    color: #FF0066;
+}
