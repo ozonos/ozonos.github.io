@@ -1,0 +1,168 @@
+body{
+	font-family: trebuchet, arial, sans-sherif;
+	margin: 0px;
+	color: #5A5A5A;
+	Font-size: 14px;
+	Line-height: 1.4;
+	font-weight: Extra Light;
+}
+
+header{
+	height: 500px;
+    background: -webkit-linear-gradient(45deg, #e91e63 , #3f51b5); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(45deg, #e91e63, #3f51b5); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(45deg, #e91e63, #3f51b5); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(45deg, #e91e63 , #3f51b5); /* Standard syntax (must be last) */
+	
+}
+
+#headerimage{
+	height: 500px;
+	width: 100%;
+	opacity: 0.4;
+	padding: 0px;
+}
+
+#logo{
+	height: 100px; 
+	width: 200px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+header ul{
+	text-align: right;
+	width: 95%;
+	position: absolute;
+	top: 0px;
+	list-style-type: none;
+	background: transparent;
+	border: 0px;
+}
+
+header li{
+	padding: 0px 20px;
+	display: inline-block;
+}
+
+header ul li a{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+header h2{
+	position: absolute;
+	top: 150px;
+	color: #ffffff;
+	font-size: 3em;
+	font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-weight:100;
+	font-family: verdana;
+	width: 100%;
+}
+
+#video{
+	position: relative;
+	opacity: 1;
+	margin-top: -200px;
+	width: 500px;
+	height: 400px;
+	background-color: #ffffff;
+	border: 10px solid black;
+	border-radius: 10px;
+}
+
+#button #main_button{
+	margin-top: 300px;
+	padding: 3px 30px;
+	line-height: 50px;
+	width: 300px;
+	background-color: #11aa89;
+	border-radius: 5px;
+	color: white;
+}
+#icon{
+	margin-top: 8px;
+	float: left;
+	height: 30px;
+	width: 30px;
+	border-radius: 100%;
+	border: 3px solid #ffffff;
+}
+
+#button_link{
+	margin-top: 30px;
+	color: #7C7D7E;
+}
+
+#button .boll{
+	height: 8px;
+	width: 8px;
+	border-radius: 100%;
+	background-color: #7C7D7E;
+}
+
+#button a{
+	text-decoration: none;
+	color: #7C7D7E;
+	font-family:verdana;
+	font-size: 18px;
+}
+
+#main{
+	margin-top: 100px;
+	width: 100%;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+#main table{
+	margin: 5% 10% 5% 10%;
+	text-align: center;
+}
+
+#main table td{
+	padding-right: 5%;
+	padding-left: 5%;
+}
+#main td img{
+	border-radius: 10px;
+	height: 150px;
+	width: 100%;
+}
+
+# main td p{
+	font-weight: light;
+}
+
+#numix{
+	padding-top: 80px;
+	padding-bottom: 80px;
+	width: 100%;
+	border-top: 1px solid black;
+}
+
+#numix h2{
+	font-size: 3em;
+}
+
+#numix_img{
+	display: inline-block;
+	margin-top: 50px;
+	width: 100%;
+	line-height: 70px;
+}
+#numix table{
+	margin: 5% 10% 5% 10%;
+	text-align: center;
+}
+
+#numix table tr td img{
+	height: 70px;
+	width: 50%;
+}
+
+#numix table tr td p{
+	font-size: 2em;
+}
