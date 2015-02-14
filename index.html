@@ -1,109 +1,53 @@
 ---
+layout: boilerplate
 ---
 
-<html>
+<header class="cover">
 
-<head>
-    <meta charset="utf-8">
+    {% include nav.html %}
 
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    {% if site.tagline %}
+        <h1 class="cover-title">{{ site.tagline }}</h1>
+    {% endif %}
 
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title | prepend: ' - ' | prepend: site.tagline }}{% endif %}">
-    <meta name="twitter:description" content="{{ site.description }}">
-    <meta name="twitter:image" content="{{ site.image | prepend: site.url }}">
+    <div class="cover-video"></div>
+</header>
 
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title | prepend: ' - ' | prepend: site.tagline }}{% endif %}">
-    <meta property="og:description" content="{{ site.description }}">
-    <meta property="og:image" content="{{ site.image | prepend: site.url }}">
-
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title | prepend: ' - ' | prepend: site.tagline }}{% endif %}</title>
-
-    <meta name="description" content="{{ site.description }}">
-
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-
-    <link rel="image_src" href="{{ site.image | prepend: site.url }}">
-
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-
-    <link rel="shortcut icon" href="{{ '/assets/images/favicon.png' | prepend: site.baseurl }}">
-
-    <link rel="stylesheet" type="text/css"  media="screen" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="{{ '/css/main.css'  | prepend: site.baseurl  }}">
-
-    <!-- enable HTML5 in IE, we need to place it before body -->
-    <!--[if lt IE 9]>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script>
-        <script>window.html5 || document.write('<script src="s/scripts/lib/html5shiv.min.js"><\/script>')</script>
-    <![endif]-->
-</head>
-
-<body>
-
-    <header class="cover">
-        <nav class="nav">
-            <ul class="nav-left">
-                <li class="nav-item"><img src="./assets/ozon-logo.png" class="nav-logo" /></li>
-            </ul>
-
-            <ul class="nav-right">
-                <li class="nav-item"><a href="">About</a></li>
-                <li class="nav-item"><a href="">Store</a></li>
-                <li class="nav-item"><a href="">Docs</a></li>
-                <li class="nav-item"><a href="">Contribute</a></li>
-            </ul>
-        </nav>
-
-        <h1 class="cover-title">The Operating System designed for you</h1>
-
-        <div class="cover-video"></div>
-    </header>
-
-    <section class="container section-centered">
-        <div class="container-content">
-            <a class="button-download">Get Ozon OS beta</a>
-            <div class="button-download-info">
-                <span class="button-download-info-item">System requirements</span>
-                <span class="button-download-info-dot"></span>
-                <span class="button-download-info-item">Installation instructions</span>
-            </div>
+<section class="container section-centered">
+    <div class="container-content">
+        <a class="button-download">Get Ozon OS beta</a>
+        <div class="button-download-info">
+            <span class="button-download-info-item">System requirements</span>
+            <span class="button-download-info-dot"></span>
+            <span class="button-download-info-item">Installation instructions</span>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="container section-centered">
-        <div class="container-content row">
-            <div class="col small-12 medium-6 large-4">
-                <h2>Beautiful and fast</h2>
-                <p>Atom, the desktop environment of Ozon is designed in house to get your stuff done, while still being slick and modern.</p>
-            </div>
-            <div class="col small-12 medium-6 large-4">
-                <h2>Stable and secure</h2>
-                <p>Based on the stable and secure core of Fedora, Ozon provides the security you’ve come to excpect from a modern Linux system.</p>
-            </div>
-            <div class="col small-12 medium-6 large-4">
-                <h2>Free and open</h2>
-                <p>Ozon is free and open source. So anyone can take a look at the source code, fork it for their own needs and contribute back to the upstream.</p>
-            </div>
+<section class="container section-centered">
+    <div class="container-content row">
+        <div class="col small-12 medium-6 large-4">
+            <h2>Beautiful and fast</h2>
+            <p>Atom, the desktop environment of Ozon is designed in house to get your stuff done, while still being slick and modern.</p>
         </div>
-    </section>
-
-    <section class="container section-centered">
-        <div class="container-content">
-            <h2>Ozon is a collaboration between</h2>
-            <img src="./assets/nitrux-logo.png" alt="Nitrux">
-            <span class="and">&</span>
-            <img src="./assets/numix-logo.png" alt="Numix">
+        <div class="col small-12 medium-6 large-4">
+            <h2>Stable and secure</h2>
+            <p>Based on the stable and secure core of Fedora, Ozon provides the security you’ve come to excpect from a modern Linux system.</p>
         </div>
-    </section>
+        <div class="col small-12 medium-6 large-4">
+            <h2>Free and open</h2>
+            <p>Ozon is free and open source. So anyone can take a look at the source code, fork it for their own needs and contribute back to the upstream.</p>
+        </div>
+    </div>
+</section>
 
-</body>
+<section class="container section-centered">
+    <div class="container-content">
+        <h2>Ozon is a collaboration between</h2>
+        <img src="./assets/nitrux-logo.png" alt="Nitrux">
+        <span class="and">&</span>
+        <img src="./assets/numix-logo.png" alt="Numix">
+    </div>
+</section>
 
-</html>
+{% include footer.html %}
