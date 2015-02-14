@@ -1,0 +1,25 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+// Font settings
+$font-family-normal: "Source Sans Pro", "Myriad Pro", Helvetica, Tahoma, "Nimbus Sans", Arial, sans-serif !default;
+$font-family-headings: "Source Sans Pro", Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif !default;
+$font-family-monospace: Consolas, "Andale Mono", "Lucida Console", "Nimbus Mono", "Courier New", monospace !default;
+$font-size: 16px !default;
+$font-size-mobile: 14px !default;
+$font-line-height: 1.4 !default;
+
+// Colors
+$accent-color: #11aa89 !default;
+$dark-color: #555 !default;
+
+// Misc
+$roundness: 4px !default;
+$mobile-break-point: "only screen and (max-width: 27em)" !default;
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import "style";

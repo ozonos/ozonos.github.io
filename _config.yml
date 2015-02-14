@@ -1,0 +1,15 @@
+# Site settings
+title: Ozon OS - The Operating System designed for you
+email: ozonosproject@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Ozon OS is a Linux distribution optimised for gaming that is
+  designed with a minimalistic, yet modern approach in mind.
+
+  Ozon OS is a collaborative project of Nitrux and Numix.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://ozonos.github.io" # the base hostname & protocol for your site
+twitter_username: ozonosproject
+github_username: ozonos
+
+# Build settings
+markdown: kramdown

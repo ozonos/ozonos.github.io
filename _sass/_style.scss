@@ -1,0 +1,115 @@
+@import "../lace/src/scss/base";
+@import "../lace/src/scss/grid";
+
+@include grid($block-size: 10em, $columns: 12, $gutter: 1.5em);
+
+.cover {
+    $video-height: 240px;
+    $video-width: 360px;
+
+    background-image: -moz-linear-gradient(-45deg,  rgba(233,30,99,0.9) 0%, rgba(63,81,181,0.9) 100%), url(../assets/cover.jpg); /* FF3.6+ */
+    background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(233,30,99,0.9)), color-stop(100%,rgba(63,81,181,0.9))), url(../assets/cover.jpg); /* Chrome,Safari4+ */
+    background-image: -webkit-linear-gradient(-45deg,  rgba(233,30,99,0.9) 0%,rgba(63,81,181,0.9) 100%), url(../assets/cover.jpg); /* Chrome10+,Safari5.1+ */
+    background-image: -o-linear-gradient(-45deg,  rgba(233,30,99,0.9) 0%,rgba(63,81,181,0.9) 100%), url(../assets/cover.jpg); /* Opera 11.10+ */
+    background-image: -ms-linear-gradient(-45deg,  rgba(233,30,99,0.9) 0%,rgba(63,81,181,0.9) 100%), url(../assets/cover.jpg); /* IE10+ */
+    background-image: linear-gradient(135deg,  rgba(233,30,99,0.9) 0%,rgba(63,81,181,0.9) 100%), url(../assets/cover.jpg); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6e91e63', endColorstr='#e63f51b5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: cover;
+    text-align: center;
+    color: $light-color;
+    box-shadow: inset 0 -.5px 1.5px rgba(0,0,0,0.3);
+    margin-bottom: $video-height / 2;
+
+    &-title {
+        position: relative;
+        bottom: $video-height / -2;
+        font-size: 2.5em;
+        font-weight: 200;
+        margin: 1em;
+    }
+
+    &-video {
+        position: relative;
+        bottom: $video-height / -2;
+        background-image: url(../assets/tablet.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-size: cover;
+        width: $video-width;
+        height: $video-height;
+        max-width: 100%;
+        margin: auto;
+        border-radius: $roundness;
+        box-shadow: 0 1.5px 3px rgba(0,0,0,.5);
+    }
+}
+
+
+.nav {
+    @extend %clearfix;
+
+    &-left {
+        list-style: none;
+        float: left;
+    }
+
+    &-right {
+        list-style: none;
+        float: right;
+    }
+
+    &-item {
+        display: inline-block;
+        padding: 1em;
+
+        a { color: currentColor; }
+    }
+
+    &-logo {
+        background-image: url(../assets/ozon-logo.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-size: cover;
+    }
+}
+
+.container {
+    border-bottom: 1px solid darken($light-color, 5%);
+
+    &-content {
+        padding: 4em 1em;
+        max-width: 60em;
+        margin: auto;
+    }
+}
+
+.section-centered { text-align: center; }
+
+.button-download {
+    display: inline-block;
+    background-color: #11AA89;
+    border-radius: $roundness;
+    margin: .67em;
+    padding: .5em 1em;
+    font-size: 1.5em;
+
+    &, &:focus, &:hover, &:active { color: $light-color; }
+
+    &-info {
+        opacity: .8;
+
+        &-dot:before {
+            vertical-align: -.1375em;
+            font-size: 2em;
+            content: "\00b7";
+        }
+
+        &-item {
+            display: inline-block;
+            padding: .5em;
+        }
+    }
+}

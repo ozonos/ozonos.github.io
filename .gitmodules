@@ -1,0 +1,3 @@
+[submodule "lace"]
+	path = lace
+	url = git@github.com:scrollback/lace.git
