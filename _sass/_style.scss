@@ -171,25 +171,12 @@ html, body { height: 100%; }
 .button-download {
     @include dropshadow(1);
 
-    display: inline-block;
-    background-color: $accent-color;
-    border-radius: $roundness;
     margin: .67em;
-    padding: .5em 1em;
     font-size: 1.5em;
-    color: $light-color;
+    font-weight: 400;
+    text-transform: none;
 
-    &:focus, &:hover {
-        @include dropshadow(2);
-
-        background-color: darken($accent-color, 5%);
-        color: $light-color;
-    }
-
-    &:active {
-        background-color: darken($accent-color, 10%);
-        color: $light-color;
-    }
+    &:focus, &:hover { @include dropshadow(2); }
 
     &-icon {
         vertical-align: -5px;
@@ -226,6 +213,8 @@ html, body { height: 100%; }
     max-width: 30em;
 
     &-buttons-area { float: right; }
+
+    .button { margin-left: 1em; }
 }
 
 .collab {
