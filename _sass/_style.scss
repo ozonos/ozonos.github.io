@@ -2,7 +2,18 @@
 @import "../lace/src/scss/grid";
 @import "../lace/src/scss/dropshadow";
 
+
+// Initialize the grid
 @include grid($block-size: 10em, $columns: 12, $gutter: 1.5em);
+
+
+// Styles
+html, body { height: 100%; }
+
+.title {
+    font-size: 3em;
+    font-weight: 200;
+}
 
 .cover {
     $video-height: 240px;
@@ -27,8 +38,6 @@
     &-title {
         position: relative;
         bottom: $video-height / -2;
-        font-size: 3em;
-        font-weight: 200;
         margin-bottom: 1em;
     }
 
@@ -100,6 +109,19 @@
 
 .section-centered { text-align: center; }
 
+.section-middle {
+    display: table;
+    table-layout: fixed;
+    height: 100%;
+    width: 100%;
+
+    &-inner {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+    }
+}
+
 .button-download {
     @include dropshadow(1);
 
@@ -135,6 +157,12 @@
         &-item {
             display: inline-block;
             padding: .5em;
+            color: currentColor;
+
+            &:focus, &:hover, &:active {
+                color: currentColor;
+                text-decoration: underline;
+            }
         }
     }
 }
