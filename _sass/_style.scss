@@ -7,12 +7,12 @@
     $video-height: 240px;
     $video-width: 360px;
 
-    background-image: -moz-linear-gradient(-45deg,  rgba(233,30,99,0.9) 0%, rgba(63,81,181,0.9) 100%), url(../assets/cover.jpg); /* FF3.6+ */
-    background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(233,30,99,0.9)), color-stop(100%,rgba(63,81,181,0.9))), url(../assets/cover.jpg); /* Chrome,Safari4+ */
-    background-image: -webkit-linear-gradient(-45deg,  rgba(233,30,99,0.9) 0%,rgba(63,81,181,0.9) 100%), url(../assets/cover.jpg); /* Chrome10+,Safari5.1+ */
-    background-image: -o-linear-gradient(-45deg,  rgba(233,30,99,0.9) 0%,rgba(63,81,181,0.9) 100%), url(../assets/cover.jpg); /* Opera 11.10+ */
-    background-image: -ms-linear-gradient(-45deg,  rgba(233,30,99,0.9) 0%,rgba(63,81,181,0.9) 100%), url(../assets/cover.jpg); /* IE10+ */
-    background-image: linear-gradient(135deg,  rgba(233,30,99,0.9) 0%,rgba(63,81,181,0.9) 100%), url(../assets/cover.jpg); /* W3C */
+    background-image: -moz-linear-gradient(-45deg,  rgba(233,30,99,0.95) 0%, rgba(63,81,181,0.95) 100%), url(../assets/cover.png); /* FF3.6+ */
+    background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(233,30,99,0.95)), color-stop(100%,rgba(63,81,181,0.95))), url(../assets/cover.png); /* Chrome,Safari4+ */
+    background-image: -webkit-linear-gradient(-45deg,  rgba(233,30,99,0.95) 0%,rgba(63,81,181,0.95) 100%), url(../assets/cover.png); /* Chrome10+,Safari5.1+ */
+    background-image: -o-linear-gradient(-45deg,  rgba(233,30,99,0.95) 0%,rgba(63,81,181,0.95) 100%), url(../assets/cover.png); /* Opera 11.10+ */
+    background-image: -ms-linear-gradient(-45deg,  rgba(233,30,99,0.95) 0%,rgba(63,81,181,0.95) 100%), url(../assets/cover.png); /* IE10+ */
+    background-image: linear-gradient(135deg,  rgba(233,30,99,0.95) 0%,rgba(63,81,181,0.95) 100%), url(../assets/cover.png); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6e91e63', endColorstr='#e63f51b5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
     background-repeat: no-repeat;
@@ -28,7 +28,7 @@
         bottom: $video-height / -2;
         font-size: 3em;
         font-weight: 200;
-        margin: 1em;
+        margin-bottom: 1em;
     }
 
     &-video {
@@ -51,6 +51,8 @@
 .nav {
     @extend %clearfix;
 
+    padding: 1em;
+
     &-left {
         list-style: none;
         float: left;
@@ -64,6 +66,8 @@
     &-item {
         display: inline-block;
         padding: 1em;
+
+        &-logo { padding: 0; }
 
         a { color: currentColor; }
     }
@@ -114,8 +118,39 @@
     }
 }
 
+.feat-image { padding: 1em; }
+
+.collab {
+    &-item {
+        display: inline-block;
+        height: 64px;
+        line-height: 64px;
+        vertical-align: middle;
+    }
+
+    &-logo {
+        padding: 0;
+        opacity: .8;
+
+        &:focus, &:hover, &:active { opacity: 1; }
+    }
+
+    &-separator {
+        padding: 0 1em;
+        opacity: .5;
+        font-weight: 700;
+    }
+}
+
 .footer {
     opacity: .8;
     padding: 1em;
     text-align: center;
+
+    &-social {
+        &-item {
+            display: inline-block;
+            padding: 1em .5em;
+        }
+    }
 }
