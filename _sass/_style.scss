@@ -1,5 +1,6 @@
 @import "../lace/src/scss/base";
 @import "../lace/src/scss/grid";
+@import "../lace/src/scss/animations";
 @import "../lace/src/scss/dropshadow";
 @import "../lace/src/scss/modal";
 
@@ -66,6 +67,19 @@ html, body { height: 100%; }
 
     padding: 1em;
 
+    &-menu {
+        display: none;
+
+        @media #{$mobile-break-point} {
+            display: block;
+            float: right;
+            padding: .5em 1em;
+            opacity: .8;
+
+            &:focus, &:hover, &:active { opacity: 1; }
+        }
+    }
+
     &-left {
         list-style: none;
         float: left;
@@ -87,6 +101,44 @@ html, body { height: 100%; }
             opacity: .8;
 
             &:focus, &:hover, &:active { opacity: 1; }
+        }
+    }
+
+    @media #{$mobile-break-point} {
+        .nav {
+            &-right {
+                @include transition;
+                @include dropshadow(3);
+
+                opacity: 0;
+                pointer-events: none;
+                position: absolute;
+                top: 3em;
+                right: 0;
+                margin: 1em;
+                background-color: rgba(0,0,0,0.9);
+                z-index: 1;
+                border-radius: $roundness;
+            }
+
+            &-item {
+                @include transition;
+
+                display: block;
+
+                &:focus, &:hover { background-color: rgba(255,255,255,0.1); }
+
+                &:active { background-color: rgba(255,255,255,0.2); }
+
+                a { padding: 1.5em; }
+            }
+        }
+
+        &-open {
+            .nav-right {
+                opacity: 1;
+                pointer-events: auto;
+            }
         }
     }
 }
