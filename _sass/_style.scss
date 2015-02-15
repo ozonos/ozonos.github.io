@@ -1,6 +1,7 @@
 @import "../lace/src/scss/base";
 @import "../lace/src/scss/grid";
 @import "../lace/src/scss/dropshadow";
+@import "../lace/src/scss/modal";
 
 
 // Initialize the grid
@@ -88,13 +89,6 @@ html, body { height: 100%; }
             &:focus, &:hover, &:active { opacity: 1; }
         }
     }
-
-    &-logo {
-        background-image: url(../assets/ozon-logo.png);
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-size: cover;
-    }
 }
 
 .container {
@@ -169,6 +163,14 @@ html, body { height: 100%; }
 
 .feat-image { padding: 1em; }
 
+.warning-dialog {
+    @extend %clearfix;
+
+    max-width: 30em;
+
+    &-buttons-area { float: right; }
+}
+
 .collab {
     &-item {
         display: inline-block;
@@ -188,6 +190,11 @@ html, body { height: 100%; }
         padding: 0 1em;
         opacity: .5;
         font-weight: 700;
+
+        @media #{$mobile-break-point} {
+            display: block;
+            height: auto;
+        }
     }
 }
 

@@ -15,7 +15,7 @@ layout: boilerplate
 
 <section class="container section-centered">
     <div class="container-content">
-        <a class="button-download">Get Ozon OS beta</a>
+        <a id="button-download" class="button-download">Get Ozon OS beta</a>
         <div class="button-download-info">
             <a class="button-download-info-item" href="./wip.html">System requirements</a>
             <span class="button-download-info-dot"></span>
@@ -54,3 +54,20 @@ layout: boilerplate
 </section>
 
 {% include footer.html %}
+
+<script id="warning-dialog-content" type="text/template">
+    <div class="warning-dialog">
+        <h1>Downloading beta software!</h1>
+        <p>You're about to download the BETA version of Ozon OS. This means that the OS will be incomplete and there will be bugs. We are not to be held responsible if using Ozon Beta results in you being teleported on an unknown island, on which you will have to become modern day Robinson Crusoe to survive.</p>
+        <p class="warning-dialog-buttons-area">
+            <a class="button secondary modal-remove">I shall wait</a>
+            <a class="button modal-remove">I'll take my chances</a>
+        </p>
+    </div>
+</script>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/velocity/1.2.1/velocity.js"></script>
+<script src="./lace/src/js/jquery.lace.js"></script>
+<script src="./lace/src/js/jquery.modal.js"></script>
+<script src="./js/main.js"></script>
