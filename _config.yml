@@ -10,8 +10,14 @@ description: > # this means to ignore newlines until "baseurl:"
 image: "" # an image for opengraph
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://ozonos.github.io" # the base hostname & protocol for your site
+
+# Social
 twitter_username: ozonosproject
 github_username: ozonos
 
 # Build settings
 markdown: kramdown
+
+# Sass options
+sass:
+  style: compressed
