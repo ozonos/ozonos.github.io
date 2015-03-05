@@ -5,6 +5,7 @@ $(function() {
     'use strict';
 
     var $navBar = $('nav'),
+        $coverVideo = $('#cover-video'),
         $downloadButton = $('#button-download'),
         $warningDialog = $('<div>').html($('#warning-dialog-content').html());
 
@@ -18,5 +19,17 @@ $(function() {
 
     $downloadButton.on('click', function() {
         $warningDialog.modal();
+    });
+
+    $coverVideo.on('click', function() {
+        var video = $(this).attr('data-video');
+
+        $('<iframe>').attr({
+            width: '853',
+            height: '480',
+            frameborder: 0,
+            allowfullscreen: true,
+            src: video
+        }).addClass('lightbox-dialog').modal();
     });
 });

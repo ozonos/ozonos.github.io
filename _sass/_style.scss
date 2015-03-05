@@ -213,6 +213,8 @@ html, body { height: 100%; }
     border-radius: $roundness;
 }
 
+.lightbox-dialog { padding: 0; }
+
 .warning-dialog {
     @extend %clearfix;
 
