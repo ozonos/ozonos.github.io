@@ -64,7 +64,7 @@ html, body { height: 100%; }
 .nav {
     @extend %clearfix;
 
-    padding: 1em;
+    padding: 1em 1.5em;
 
     a { border: 0; }
 
@@ -82,11 +82,13 @@ html, body { height: 100%; }
     }
 
     &-left {
+        margin: 0;
         list-style: none;
         float: left;
     }
 
     &-right {
+        margin: 0;
         list-style: none;
         float: right;
     }
