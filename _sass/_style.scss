@@ -45,18 +45,15 @@ html, body { height: 100%; }
         margin-bottom: 1em;
     }
 
-    &-video {
+    &-video-tablet {
         @include dropshadow(3);
 
         position: relative;
         bottom: $video-height / -2;
-        background-image: url("../assets/tablet.png");
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-size: cover;
         width: $video-width;
-        height: $video-height;
-        max-width: 100%;
+        height: auto;
+        max-height: $video-height;
+        max-width: 80%;
         margin: auto;
         border-radius: $roundness;
         cursor: pointer;
