@@ -69,6 +69,8 @@ html, body { height: 100%; }
 
     padding: 1em;
 
+    a { border: 0; }
+
     &-menu {
         display: none;
 
@@ -110,7 +112,6 @@ html, body { height: 100%; }
         .nav {
             &-right {
                 @include transition;
-                @include dropshadow(3);
 
                 opacity: 0;
                 pointer-events: none;
@@ -196,12 +197,13 @@ html, body { height: 100%; }
 
         &-item {
             display: inline-block;
-            padding: .5em;
+            margin: .5em;
             color: currentColor;
+            opacity: .6;
 
             &:focus, &:hover, &:active {
                 color: currentColor;
-                text-decoration: underline;
+                opacity: 1;
             }
         }
     }
@@ -220,6 +222,8 @@ html, body { height: 100%; }
 }
 
 .collab {
+    a { border: 0 }
+
     &-item {
         display: inline-block;
         height: 64px;
@@ -247,6 +251,8 @@ html, body { height: 100%; }
 }
 
 .footer {
+    a { border: 0 }
+
     opacity: .8;
     padding: 1em;
     text-align: center;
