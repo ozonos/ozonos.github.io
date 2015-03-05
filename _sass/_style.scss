@@ -209,7 +209,10 @@ html, body { height: 100%; }
     }
 }
 
-.feat-image { padding: 1em; }
+.feat-image {
+    margin: 1.5em 0;
+    border-radius: $roundness;
+}
 
 .warning-dialog {
     @extend %clearfix;
@@ -222,7 +225,7 @@ html, body { height: 100%; }
 }
 
 .collab {
-    a { border: 0 }
+    a { border: 0; }
 
     &-item {
         display: inline-block;
@@ -251,7 +254,7 @@ html, body { height: 100%; }
 }
 
 .footer {
-    a { border: 0 }
+    a { border: 0; }
 
     opacity: .8;
     padding: 1em;
