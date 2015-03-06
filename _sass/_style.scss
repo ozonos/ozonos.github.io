@@ -23,11 +23,11 @@ html, body { height: 100%; }
     $video-height: 240px;
     $video-width: 360px;
 
-    background-image: -moz-linear-gradient(-45deg, rgba(233, 30, 99, .95) 0%, rgba(63, 81, 181, .95) 100%), url("../assets/cover.png"); /* FF3.6+ */
-    background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(233, 30, 99, .95)), color-stop(100%, rgba(63, 81, 181, .95))), url("../assets/cover.png"); /* Chrome,Safari4+ */
+    background-image: -moz-linear-gradient(-45deg, rgba(159, 101, 226, .90) 0%, rgba(10, 260, 162, .90) 100%), url("../assets/cover.png"); /* FF3.6+ */
+    background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(159, 101, 226, .90)), color-stop(100%, rgba(10, 260, 162, .90))), url("../assets/cover.png"); /* Chrome,Safari4+ */
     background-image: -webkit-linear-gradient(-45deg, rgba(159, 101, 226, .90) 0%, rgba(10, 260, 162, .90) 100%), url("../assets/cover.png"); /* Chrome10+,Safari5.1+ */
-    background-image: -o-linear-gradient(-45deg, rgba(233, 30, 99, .95) 0%, rgba(63, 81, 181, .95) 100%), url("../assets/cover.png"); /* Opera 11.10+ */
-    background-image: -ms-linear-gradient(-45deg, rgba(233, 30, 99, .95) 0%, rgba(63, 81, 181, .95) 100%), url("../assets/cover.png"); /* IE10+ */
+    background-image: -o-linear-gradient(-45deg, rgba(159, 101, 226, .90) 0%, rgba(10, 260, 162, .90) 100%), url("../assets/cover.png"); /* Opera 11.10+ */
+    background-image: -ms-linear-gradient(-45deg, rgba(159, 101, 226, .90) 0%, rgba(10, 260, 162, .90) 100%), url("../assets/cover.png"); /* IE10+ */
     background-image: linear-gradient(135deg, rgba(159, 101, 226, .90) 0%, rgba(10, 260, 162, .90) 100%), url("../assets/cover.png"); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6e91e63', endColorstr='#e63f51b5', GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
