@@ -19,6 +19,12 @@ html, body { height: 100%; }
     font-weight: 200;
 }
 
+.title-download {
+    font-size: 3em;
+    font-weight: 200;
+    color: #555555;
+}
+
 .cover {
     $video-height: 240px;
     $video-width: 360px;
@@ -168,13 +174,6 @@ html, body { height: 100%; }
         vertical-align: middle;
         text-align: center;
     }
-}
-
-.container-content input[type="radio"] {
-width : 24px;
-height : 24px;
-vertical-align : middle;
-margin: 0px 8px 0 0;
 }
 
 .button-download {
