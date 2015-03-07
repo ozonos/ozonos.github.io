@@ -7,8 +7,21 @@ $(function() {
     var $navBar = $('nav'),
         $coverVideo = $('#cover-video'),
         $downloadButton = $('#button-download'),
-        $warningDialog = $('<div>').html($('#warning-dialog-content').html
-());
+        $betaButton = $('#button-beta'),
+
+        $warningDialog = $('<div/>', {
+          html: $('#warning-dialog-content').html()
+        }),
+
+        $betaDialog = $('<div/>', {
+          html: $('#beta-dialog-content').html(),
+
+          // If you do not add the width the
+          // lightbox is not centralized.
+          css: {
+            width: 350
+          }
+        });
 
     $(document).on('click', function(e) {
         if ($(e.target).closest('.nav-menu').length) {
@@ -20,6 +33,11 @@ $(function() {
 
     $downloadButton.on('click', function() {
         $warningDialog.modal();
+    });
+
+    $betaButton.on('click', function(event) {
+        event.preventDefault();
+        $betaDialog.modal();
     });
 
     $coverVideo.on('click', function() {
