@@ -6,8 +6,6 @@ $(function() {
 
     var $navBar = $('nav'),
         $coverVideo = $('#cover-video'),
-	$betaButton = $('#button-beta'),
-        $betaDialog = $('<div>').html($('#beta-dialog-content').html
         $downloadButton = $('#button-download'),
         $warningDialog = $('<div>').html($('#warning-dialog-content').html
 ());
