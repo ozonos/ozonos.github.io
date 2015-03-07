@@ -6,8 +6,11 @@ $(function() {
 
     var $navBar = $('nav'),
         $coverVideo = $('#cover-video'),
+	$betaButton = $('#button-beta'),
+        $betaDialog = $('<div>').html($('#beta-dialog-content').html
         $downloadButton = $('#button-download'),
-        $warningDialog = $('<div>').html($('#warning-dialog-content').html());
+        $warningDialog = $('<div>').html($('#warning-dialog-content').html
+());
 
     $(document).on('click', function(e) {
         if ($(e.target).closest('.nav-menu').length) {
