@@ -170,6 +170,14 @@ html, body { height: 100%; }
     }
 }
 
+.container-content input[type="radio"] {
+width : 24px;
+height : 24px;
+vertical-align : middle;
+margin: 0px 8px 0 0;
+background : black;
+}
+
 .button-download {
     @include dropshadow(1);
 
