@@ -1,18 +1,14 @@
 ---
 layout: boilerplate
 title: Frequently asked questions - Ozon OS
-permalink: /faq/
+permalink: faq-md.html
 ---
 
 <header class="cover">
 
     {% include nav.html %}
 
-<section class="container section-middle">
-    <div class="container-content section-middle-inner">
-        <h1 class="title">Frequently Asked Questions</h1>
-    </div>
-</section>
+        <h1 class="cover-title title-download">Frequantly Asked Questions</h1>
 
 </header>
 
