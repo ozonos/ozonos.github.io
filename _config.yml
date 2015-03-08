@@ -14,6 +14,8 @@ url: "http://ozonos.github.io" # the base hostname & protocol for your site
 # Social
 twitter_username: ozonosproject
 github_username: ozonos
+gplus_username: 114059589828649263886
+facebook_username: pages/Ozon-OS/1384891485157043
 
 # Build settings
 markdown: kramdown
