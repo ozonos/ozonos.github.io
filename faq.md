@@ -8,7 +8,7 @@ permalink: faq-md.html
 
     {% include nav.html %}
 
-        <h1 class="cover-title title-download">Frequantly Asked Questions</h1>
+        <h1 class="cover-title title-dark">Frequently Asked Questions</h1>
 
 </header>
 
