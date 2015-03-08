@@ -9,12 +9,13 @@ $font-family-normal: "Source Sans Pro", "Myriad Pro", Helvetica, Tahoma, "Nimbus
 $font-family-headings: "Source Sans Pro", Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif !default;
 $font-family-monospace: Consolas, "Andale Mono", "Lucida Console", "Nimbus Mono", "Courier New", monospace !default;
 $font-size: 16px !default;
-$font-size-mobile: 14px !default;
+$font-size-mobile: 16px !default;
 $font-line-height: 1.4 !default;
 
 // Colors
 $accent-color: #11aa89 !default;
-$dark-color: #555 !default;
+$dark-color: #444 !default;
+$link-color: #9575cd !default;
 
 // Misc
 $roundness: 4px !default;

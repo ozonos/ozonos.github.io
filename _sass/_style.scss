@@ -19,22 +19,16 @@ html, body { height: 100%; }
     font-weight: 200;
 }
 
-.title-dark {
-    font-size: 3em;
-    font-weight: 200;
-    color: #555555;
-}
-
 .cover {
     $video-height: 240px;
     $video-width: 360px;
 
-    background-image: -moz-linear-gradient(-45deg, rgba(159, 101, 226, .90) 0%, rgba(10, 260, 162, .90) 100%), url("../assets/cover.png"); /* FF3.6+ */
-    background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(159, 101, 226, .90)), color-stop(100%, rgba(10, 260, 162, .90))), url("../assets/cover.png"); /* Chrome,Safari4+ */
-    background-image: -webkit-linear-gradient(-45deg, rgba(159, 101, 226, .90) 0%, rgba(10, 260, 162, .90) 100%), url("../assets/cover.png"); /* Chrome10+,Safari5.1+ */
-    background-image: -o-linear-gradient(-45deg, rgba(159, 101, 226, .90) 0%, rgba(10, 260, 162, .90) 100%), url("../assets/cover.png"); /* Opera 11.10+ */
-    background-image: -ms-linear-gradient(-45deg, rgba(159, 101, 226, .90) 0%, rgba(10, 260, 162, .90) 100%), url("../assets/cover.png"); /* IE10+ */
-    background-image: linear-gradient(135deg, rgba(159, 101, 226, .90) 0%, rgba(10, 260, 162, .90) 100%), url("../assets/cover.png"); /* W3C */
+    background-image: -moz-linear-gradient(-45deg, rgba(159, 101, 226, .9) 0%, rgba(10, 260, 162, .9) 100%), url("../assets/cover.png"); /* FF3.6+ */
+    background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(159, 101, 226, .9)), color-stop(100%, rgba(10, 260, 162, .9))), url("../assets/cover.png"); /* Chrome,Safari4+ */
+    background-image: -webkit-linear-gradient(-45deg, rgba(159, 101, 226, .9) 0%, rgba(10, 260, 162, .9) 100%), url("../assets/cover.png"); /* Chrome10+,Safari5.1+ */
+    background-image: -o-linear-gradient(-45deg, rgba(159, 101, 226, .9) 0%, rgba(10, 260, 162, .9) 100%), url("../assets/cover.png"); /* Opera 11.10+ */
+    background-image: -ms-linear-gradient(-45deg, rgba(159, 101, 226, .9) 0%, rgba(10, 260, 162, .9) 100%), url("../assets/cover.png"); /* IE10+ */
+    background-image: linear-gradient(135deg, rgba(159, 101, 226, .9) 0%, rgba(10, 260, 162, .9) 100%), url("../assets/cover.png"); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9f65e2b5', endColorstr='#0affa2b5', GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
     background-repeat: no-repeat;
@@ -261,11 +255,11 @@ html, body { height: 100%; }
 }
 
 .footer {
-    a { border: 0; }
-
     opacity: .8;
     padding: 1em;
     text-align: center;
+
+    a { border: 0; }
 
     &-social {
         &-item {
@@ -274,7 +268,6 @@ html, body { height: 100%; }
         }
     }
 }
-
 
 // Responsive utilities
 

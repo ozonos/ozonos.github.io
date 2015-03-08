@@ -1,16 +1,9 @@
-<!DOCTYPE html>
-<html>
+---
+layout: boilerplate
+---
 
-  {% include head.html %}
+{% include nav.html %}
 
-  <body>
+{{ content }}
 
-    {% include nav.html %}
-
-    {{ content }}
-
-    {% include footer.html %}
-
-  </body>
-
-</html>
+{% include footer.html %}
