@@ -8,20 +8,20 @@ $(function() {
         $coverVideo = $('#cover-video'),
         $downloadButton = $('#button-download'),
         $betaButton = $('#button-beta'),
+        $requirementsButton = $('#button-requirements'),
 
-        $warningDialog = $('<div/>', {
-          html: $('#warning-dialog-content').html()
-        }),
+        // If you do not add the width the
+        // lightbox is not centralized.
+        $dialogContainer = $('<div style="width:350px"></div>');
 
-        $betaDialog = $('<div/>', {
-          html: $('#beta-dialog-content').html(),
-
-          // If you do not add the width the
-          // lightbox is not centralized.
-          css: {
-            width: 350
-          }
-        });
+    /**
+     * Insert a modal content
+     * @param  {string} element with content
+     */
+    var displayModalContent = function(element) {
+        $dialogContainer.html($(element).html());
+        $dialogContainer.modal();
+    };
 
     $(document).on('click', function(e) {
         if ($(e.target).closest('.nav-menu').length) {
@@ -32,12 +32,17 @@ $(function() {
     });
 
     $downloadButton.on('click', function() {
-        $warningDialog.modal();
+        displayModalContent('#warning-dialog-content');
     });
 
     $betaButton.on('click', function(event) {
         event.preventDefault();
-        $betaDialog.modal();
+        displayModalContent('#beta-dialog-content');
+    });
+
+    $requirementsButton.on('click', function(event) {
+        event.preventDefault();
+        displayModalContent('#requirements-dialog-content');
     });
 
     $coverVideo.on('click', function() {
