@@ -213,6 +213,8 @@ html, body { height: 100%; }
     border-radius: $roundness;
 }
 
+.modal { width: 25em; }
+
 .lightbox-dialog { padding: 0; }
 
 .warning-dialog {
@@ -222,7 +224,10 @@ html, body { height: 100%; }
 
     &-buttons-area { float: right; }
 
-    .button { margin-left: 1em; }
+    .button {
+        margin-left: 1em;
+        border-bottom-color: transparent;
+    }
 }
 
 .collab {
