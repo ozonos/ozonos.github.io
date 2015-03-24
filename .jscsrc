@@ -22,6 +22,7 @@
         "allowUrlComments": true,
         "allowRegex": true
     },
+    "validateQuoteMarks": { "mark": "\"", "escape": true },
 
     "disallowMixedSpacesAndTabs": "smart",
     "disallowTrailingWhitespace": true,
