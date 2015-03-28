@@ -1,0 +1,6 @@
+{
+	"shell-version": ["3.10", "3.12","3.14","3.16"],
+	"uuid": "LOWERCASE_EXTENSION_NAME_HERE@ozonos.org",
+	"name": "EXTENSION_NAME_HERE",
+	"description": "Add description"
+}

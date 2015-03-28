@@ -9,6 +9,9 @@
  *
  */
 
+/*TODO: this could probably also hold the injectToFunction stuff which 
+ * we sometimes use for...you know, function injection */
+
 const Gettext = imports.gettext;
 const Gio = imports.gi.Gio;
 const Lang = imports.lang;

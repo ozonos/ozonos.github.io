@@ -2,7 +2,7 @@
 /*jshint esnext: true */
 /*jshint indent: 4 */
 
-/* Numix/Ozon Project 2014
+/* Numix/Ozon Project 2015
  * 
  * Name: Atom Extension
  * UUID: atom-extension@ozonos.org
@@ -10,10 +10,9 @@
  */
 
 /* Extension Skeleton Imports */
-/* what exactly does this get us? */
 const ExtensionUtils = imports.misc.extensionUtils;
 const Me = ExtensionUtils.getCurrentExtension();
-/* This should includ convenience and such */
+/* This should include convenience and such */
 
 /* Extension Imports */
 
