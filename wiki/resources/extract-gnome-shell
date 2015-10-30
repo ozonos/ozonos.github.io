@@ -1,0 +1,13 @@
+#! /bin/sh
+target=gnome-shell
+gs=/usr/lib64/gnome-shell/libgnome-shell.so
+
+mkdir $target
+
+cd $HOME/$target
+
+mkdir -p ui/components ui/status misc perf extensionPrefs gdm
+
+for r in `gresource list $gs`; do
+  gresource extract $gs $r > ${r/#\/org\/gnome\/shell/.}
+done

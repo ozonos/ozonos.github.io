@@ -1,0 +1,9 @@
+#! /bin/sh
+ 
+gst=/usr/share/gnome-shell/gnome-shell-theme.gresource
+mkdir gnome-shell-theme
+ 
+for r in `gresource list $gst`; do
+        gresource extract $gst $r > ${r/#\/org\/gnome\/shell/.}
+done
+

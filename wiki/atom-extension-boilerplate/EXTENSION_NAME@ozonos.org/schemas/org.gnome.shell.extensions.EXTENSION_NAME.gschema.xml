@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="gnome-shell-extensions">
+	<schema path="/org/gnome/shell/extensions/atom-hotcorners/" id="org.gnome.shell.extensions.atom-hotcorners">
+		<key type="s" name="top-left">
+			<default>'show-windows'</default>
+			<summary>Action for Top Left Corner</summary>
+			<description>Apply an Action for the Top Left Corner</description>
+		</key>
+		<key type="s" name="top-right">
+			<default>'show-applications'</default>
+			<summary>Action for Top Right Corner</summary>
+			<description>Apply an Action for the Top Right Corner</description>
+		</key>
+		<key type="s" name="bottom-left">
+			<default>'none'</default>
+			<summary>Action for Bottom Left Corner</summary>
+			<description>Apply an Action for the Bottom Left Corner</description>
+		</key>
+		<key type="s" name="bottom-right">
+			<default>'none'</default>
+			<summary>Action for Bottom Right Corner</summary>
+			<description>Apply an Action for the Bottom Right Corner</description>
+		</key>
+	</schema>
+</schemalist>
