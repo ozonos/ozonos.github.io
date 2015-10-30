@@ -1,4 +1,2 @@
-[ozonos.github.io](http://ozonos.github.io)
-================
-
-The website for Ozon OS
+# Ozon HQ
+Home of the [website](http://ozonos.github.io/) and [wiki](https://github.com/ozonos/ozonos.github.io/wiki) for Ozon OS
