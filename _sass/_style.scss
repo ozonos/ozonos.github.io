@@ -20,9 +20,6 @@ html, body { height: 100%; }
 }
 
 .cover {
-    $video-height: 240px;
-    $video-width: 360px;
-
     background-image: -moz-linear-gradient(-45deg, rgba(159, 101, 226, .9) 0%, rgba(10, 260, 162, .9) 100%), url("../assets/images/cover.png"); /* FF3.6+ */
     background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(159, 101, 226, .9)), color-stop(100%, rgba(10, 260, 162, .9))), url("../assets/images/cover.png"); /* Chrome,Safari4+ */
     background-image: -webkit-linear-gradient(-45deg, rgba(159, 101, 226, .9) 0%, rgba(10, 260, 162, .9) 100%), url("../assets/images/cover.png"); /* Chrome10+,Safari5.1+ */
@@ -37,26 +34,12 @@ html, body { height: 100%; }
     text-align: center;
     color: $light-color;
     box-shadow: inset 0 -.5px 1.5px rgba(0, 0, 0, .3);
-    margin-bottom: $video-height / 2;
+    margin-bottom: 120px;
 
     &-title {
         position: relative;
-        bottom: $video-height / -2;
-        margin-bottom: 1em;
-    }
-
-    &-video-tablet {
-        @include dropshadow(3);
-
-        position: relative;
-        bottom: $video-height / -2;
-        width: $video-width;
-        height: auto;
-        max-height: $video-height;
-        max-width: 80%;
-        margin: auto;
-        border-radius: $roundness;
-        cursor: pointer;
+        bottom: 50px;
+        margin-bottom: -3em;
     }
 }
 
