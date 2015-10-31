@@ -11,28 +11,51 @@ permalink: /
         <h1 class="cover-title title">{{ site.tagline }}</h1>
     {% endif %}
 
-    <a id="cover-video" class="cover-video" data-video="https://www.youtube.com/embed/4Q9YazKJeTM?autoplay=1;rel=0&amp;showinfo=0;frameborder=0">
-        <img class="cover-video-tablet" src="./assets/tablet.png">
-    </a>
 </header>
 
 <section class="container section-centered">
-    <div class="container-content row">
-        <div class="col small-12 medium-6 large-4">
-            <h2>Simply beautiful</h2>
-            <img class="feat-image" src="./assets/feat-beautiful.png" alt="Beautiful">
-            <p>Atom, the desktop environment of Ozon, is designed to not get into your way and be simple, sleek and modern while focusing on helping you to get stuff done quickly.</p>
-        </div>
-        <div class="col small-12 medium-6 large-4">
-            <h2>Gaming ready</h2>
-            <img class="feat-image" src="./assets/feat-gaming.png" alt="Gaming">
-            <p>Ozon comes with performance optimisations as well as easy way to install video drivers and gaming platforms, so you will be able to play plenty of games with ease.</p>
-        </div>
-        <div class="col small-12 medium-6 large-4">
-            <h2>Open source</h2>
-            <img class="feat-image" src="./assets/feat-open.png" alt="Open">
-            <p>We strongly believe in open source and hence we've made Ozon completely open source. You can <a href="https://github.com/{{ site.github_username }}" target="_blank">find the source on GitHub</a>, contribute to it or fork it for your own needs.</p>
-        </div>
+    <div class="container-content">
+        <h1>Ozon Announcement</h1>
+
+        <p>Hi, +JoshuaFogg here. You might know me from Numix and from Ozon as working on the icon theme and managing the GitHub repos. This is a long one so feel free to scroll to the <strong>TL;DR</strong> at the end.</p>
+
+        <blockquote><p>Hey Josh, what's up?</p></blockquote>
+
+        <p>As of November 1st it will be 5 months since we posted an update and longer still since we pushed any major code changes to Atom. A lot of you have been wondering why this is the case so it's only fair that we update you on the goings on behind the scenes.</p>
+
+        <blockquote><p>That's quite a big gap!</p></blockquote>
+
+        <p>Yeah, it's no secret that we've been struggling over the last year with developer power. Ozon was conceived by Nitrux and Numix, two very design centred groups, and so we started with a very design heavy collective. At the time of Ozon's creation we had a massive influx of developers but these lost interest surprisingly quickly.</p>
+
+        <blockquote><p>Why did they lose interest?</p></blockquote>
+
+        <p>Atom, the DE purpose built for Ozon, is built from GNOME extensions which are coded in <a href="https://wiki.gnome.org/action/show/Projects/Gjs?action=show&amp;redirect=Gjs">GJS</a>. The original logic of this was sound: we wanted to harness the power of GNOME but put our own spin on it while not forking anything. This didn't work out as nicely as we'd hoped - GJS is notoriously difficult to work with because of the lack (in some cases complete absence) of documentation, which is why our devs kept running away. We managed to get the beta ISO but the months after that were pretty slow and while we kept hoping it would improve the opposite was happening.</p>
+
+        <blockquote><p>So what happens now?</p></blockquote>
+
+        <p>A couple of months ago we were approached on Google+ by the <a href="https://kororaproject.org/">Korora</a> developers about a possible merger and making Ozon a gaming edition of their already well established distro. After some internal discussion we've decided to accept their offer.</p>
+
+        <blockquote><p>What's going to happen to Atom?</p></blockquote>
+
+        <p>Atom is being dropped as a DE. For the foreseeable future Atom will remain on the <a href="https://github.com/ozonos">Ozon GitHub</a>. We're happy to merge in contributions from the community too, we just won't be doing any work in it ourselves.</p>
+
+        <blockquote><p>What's going to happen to the Ozon theme suite?</p></blockquote>
+
+        <p>One of the big things that came out of the merger is there's interest in using the themes as the default for a future Korora release, so that's what I'll be working on. Because of this they will probably be moved to the <a href="https://github.com/kororaproject">Korora GitHub</a> sometime soon.</p>
+
+        <blockquote><p>What will the other Ozon members be doing?</p></blockquote>
+
+        <p>+PaoloRotolo and I are the only two moving straight to Korora. The others have either taken an opportunity to call this a day or work on another project for a while first.</p>
+
+        <blockquote><p>Can I keep using Ozon or Atom?</p></blockquote>
+
+        <p>We'd highly recommend you don't. For the last few months we've been paying to keep the Ozon server (where the repos are hosted) online but we'll be shutting that down pretty soon. The only available ISO is based on an old version of Fedora and pretty soon Atom will stop working with the latest version of GNOME.</p>
+
+        <p>We recommend you switch to <a href="https://kororaproject.org/">Korora</a> - it's Fedora based like Ozon and comes with a tonne of great features.</p>
+
+        <hr>
+
+        <p><strong>TL;DR: Ozon is merging into Korora. Atom is being dropped but we'll be working on the theme suite to hopefully make it default in a future release. I'm sure you all have a bazillion questions I've not thought of so ask away and I'll do my best to answer them all.</strong></p></div>
     </div>
 </section>
 
