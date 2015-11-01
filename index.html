@@ -7,107 +7,60 @@ permalink: /
 
     {% include nav.html %}
 
-    {% if site.tagline %}
-        <h1 class="cover-title title">{{ site.tagline }}</h1>
-    {% endif %}
+    <h1 class="cover-title title">Announcement</h1>
 
-    <a id="cover-video" class="cover-video" data-video="https://www.youtube.com/embed/4Q9YazKJeTM?autoplay=1;rel=0&amp;showinfo=0;frameborder=0">
-        <img class="cover-video-tablet" src="./assets/tablet.png">
-    </a>
 </header>
 
 <section class="container section-centered">
-    <div class="container-content">
-        <a id="button-download" class="button button-download">
-            <svg class="button-download-icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path fill="currentColor" d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zM9 4h6v9h4l-7 7-7-7h4V4z"/>
-            </svg>
-            Get Ozon OS beta
-        </a>
-        <div class="button-download-info">
-            <a id="button-requirements" class="button-download-info-item">System requirements</a>
-            <span class="button-download-info-dot"></span>
-            <a class="button-download-info-item" href="/wip">Installation instructions</a>
-	    <span class="button-download-info-dot"></span>
-            <a id="button-beta" class="button-download-info-item">What is a beta?</a>
-        </div>
-    </div>
-</section>
+    <div class="container-content">
+        <p>Hi, <a href="https://github.com/Foggalong">Joshua Fogg</a> here. You might know me from Numix and from Ozon as working on the icon theme and managing the GitHub repos. This is a long one so feel free to scroll to the <strong><a href="#tldr">TL;DR</a></strong> at the end.</p>
 
-<section class="container section-centered">
-    <div class="container-content row">
-        <div class="col small-12 medium-6 large-4">
-            <h2>Simply beautiful</h2>
-            <img class="feat-image" src="./assets/feat-beautiful.png" alt="Beautiful">
-            <p>Atom, the desktop environment of Ozon, is designed to not get into your way and be simple, sleek and modern while focusing on helping you to get stuff done quickly.</p>
-        </div>
-        <div class="col small-12 medium-6 large-4">
-            <h2>Gaming ready</h2>
-            <img class="feat-image" src="./assets/feat-gaming.png" alt="Gaming">
-            <p>Ozon comes with performance optimisations as well as easy way to install video drivers and gaming platforms, so you will be able to play plenty of games with ease.</p>
-        </div>
-        <div class="col small-12 medium-6 large-4">
-            <h2>Open source</h2>
-            <img class="feat-image" src="./assets/feat-open.png" alt="Open">
-            <p>We strongly believe in open source and hence we've made Ozon completely open source. You can <a href="https://github.com/{{ site.github_username }}" target="_blank">find the source on GitHub</a>, contribute to it or fork it for your own needs.</p>
-        </div>
-    </div>
-</section>
+        <blockquote><p>Hey Josh, what's up?</p></blockquote>
 
-<section class="container section-centered">
-    <div class="container-content collab">
-        <h2>Ozon is a collaboration between</h2>
-        <a class="collab-item collab-logo" href="http://nitrux.in" target="_blank"><img src="./assets/logo-nitrux.png" alt="Nitrux"></a>
-        <span class="collab-item collab-separator" class="and">&</span>
-        <a class="collab-item collab-logo" href="http://numixproject.org" target="_blank"><img src="./assets/logo-numix.png" alt="Numix"></a>
+        <p>As of November 1st it will be 5 months since we posted an update and longer still since we pushed any major code changes to Atom. A lot of you have been wondering why this is the case so it's only fair that we update you on the goings on behind the scenes.</p>
+
+        <blockquote><p>That's quite a big gap!</p></blockquote>
+
+        <p>Yeah, it's no secret that we've been struggling over the last year with developer power. Ozon was conceived by Nitrux and Numix, two very design centred groups, and so we started with a very design heavy collective. At the time of Ozon's creation we had a massive influx of developers but these lost interest surprisingly quickly.</p>
+
+        <blockquote><p>Why did they lose interest?</p></blockquote>
+
+        <p>Atom, the DE purpose built for Ozon, is built from GNOME extensions which are coded in <a href="https://wiki.gnome.org/action/show/Projects/Gjs?action=show&amp;redirect=Gjs">GJS</a>. The original logic of this was sound: we wanted to harness the power of GNOME but put our own spin on it while not forking anything. This didn't work out as nicely as we'd hoped - GJS is notoriously difficult to work with because of the lack (in some cases complete absence) of documentation, which is why our devs kept running away. We managed to get the beta ISO but the months after that were pretty slow and while we kept hoping it would improve the opposite was happening.</p>
+
+        <blockquote><p>So what happens now?</p></blockquote>
+
+        <p>A couple of months ago we were approached on Google+ by the <a href="https://kororaproject.org/">Korora</a> developers about a possible merger and making Ozon a gaming edition of their already well established distro. After some internal discussion we've decided to accept their offer.</p>
+
+        <blockquote><p>What's going to happen to Atom?</p></blockquote>
+
+        <p>Atom is being dropped as a DE. For the foreseeable future Atom will remain on the <a href="https://github.com/ozonos">Ozon GitHub</a>. We're happy to merge in contributions from the community too, we just won't be doing any work in it ourselves.</p>
+
+        <blockquote><p>What's going to happen to the Ozon theme suite?</p></blockquote>
+
+        <p>One of the big things that came out of the merger is there's interest in using the themes as the default for a future Korora release, so that's what I'll be working on. Because of this they will probably be moved to the <a href="https://github.com/kororaproject">Korora GitHub</a> sometime soon.</p>
+
+        <blockquote><p>What will the other Ozon members be doing?</p></blockquote>
+
+        <p><a href="https://github.com/PaoloRotolo">Paolo Rotolo</a> and I are the only two moving straight to Korora. The others have either taken an opportunity to call this a day or work on another project for a while first.</p>
+
+        <blockquote><p>Can I keep using Ozon or Atom?</p></blockquote>
+
+        <p>We'd highly recommend you don't. For the last few months we've been paying to keep the Ozon server (where the repos are hosted) online but we'll be shutting that down pretty soon. The only available ISO is based on an old version of Fedora and pretty soon Atom will stop working with the latest version of GNOME.</p>
+
+        <p>We recommend you switch to <a href="https://kororaproject.org/">Korora</a> - it's Fedora based like Ozon and comes with a tonne of great features.</p>
+
+        <hr>
+
+        <h2 id="tldr">TL;DR</h2>
+        <p><strong>Ozon is merging into Korora. Atom is being dropped but we'll be working on the theme suite to hopefully make it default in a future release. I'm sure you all have a bazillion questions I've not thought of so ask away and I'll do my best to answer them all.</strong></p></div>
+
+        <h1>So long, and thanks for all the fish!<h1>
     </div>
 </section>
 
 {% include footer.html %}
 
-<script id="warning-dialog-content" type="text/template">
-    <div class="warning-dialog">
-        <h1>Downloading beta software!</h1>
-        <p>You're about to download the BETA version of Ozon OS. This means that the OS will be incomplete and there will be bugs. We are not to be held responsible if using Ozon Beta results in you being teleported on an unknown island, on which you will have to become modern day Robinson Crusoe to survive.</p>
-        <div class="warning-dialog-buttons-area">
-            <a class="button secondary modal-remove">I shall wait</a>
-            <a class="button modal-remove" href="./download.html">I'll take my chances</a>
-        </div>
-    </div>
-</script>
-
-<script id="beta-dialog-content" type="text/template">
-    <div class="beta-dialog">
-        <h1>What does Beta mean?</h1>
-        <p>The term Beta in software means that a product is incomplete and needs further testing before becoming a stable product.</p>
-        <p>Ozon Beta is exactly that - incomplete. You won't find much in the way of gaming optimisations, some apps and parts of the desktop experience might be missing, the artwork will be incomplete, and we don't recommend letting your cat browse the web just yet.</p>
-        <p>However that doesn't mean the beta is not usable - it is stable and polished enough for fearless users, so feel free to give it a whirl at your own risk.</p>
-    </div>
-</script>
-
-<script id="requirements-dialog-content" type="text/template">
-    <div class="requirements-dialog">
-        <h3>Minimum:</h3>
-        <ul>
-            <li>1GHz Processor</li>
-            <li>1GB System Memory</li>
-            <li>10GB unallocated drive space</li>
-            <li>3D-accelerated GPU</li>
-        </ul>
-
-        <h3>Recommended:</h3>
-        <ul>
-            <li>2GHz or faster Processor</li>
-            <li>2GB or more System Memory</li>
-            <li>20GB or more unallocated drive space</li>
-            <li>3D-accelerated GPU</li>
-        </ul>
-    </div>
-</script>
-
-
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/velocity/1.2.1/velocity.js"></script>
 <script src="/lace/src/js/jquery.lace.js"></script>
 <script src="/lace/src/js/jquery.modal.js"></script>
-<script src="/js/main.js"></script>
